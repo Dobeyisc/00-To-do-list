@@ -50,27 +50,28 @@ Esto iniciará la aplicación en su navegador web.
 
 Abre tu navegador web y visita (http://localhost:5173) <---(puerto por defecto) para interactuar con la aplicación de la lista de tareas.
 
-Dependencias
-El proyecto utiliza las siguientes dependencias principales:
+<h2>Dependencias</h2>
+El proyecto utiliza las siguientes **dependencias principales**:
 
-@chakra-ui/react: ^2.8.2
-@emotion/react: ^11.11.1
-@emotion/styled: ^11.11.0
-framer-motion: ^10.16.4
-react: ^18.2.0
-react-dom: ^18.2.0
-Y las siguientes dependencias de desarrollo:
+*@chakra-ui/react: ^2.8.2
+*@emotion/react: ^11.11.1
+*@emotion/styled: ^11.11.0
+*framer-motion: ^10.16.4
+*react: ^18.2.0
+*react-dom: ^18.2.0
 
-@testing-library/react: ^14.1.0
-@types/react: ^18.2.15
-@types/react-dom: ^18.2.7
-@typescript-eslint/eslint-plugin: ^6.0.0
-@typescript-eslint/parser: ^6.0.0
-@vitejs/plugin-react-swc: ^3.3.2
-eslint: ^8.45.0
-eslint-plugin-react-hooks: ^4.6.0
-eslint-plugin-react-refresh: ^0.4.3
-happy-dom: ^12.10.3
-typescript: ^5.0.2
-vite: ^4.4.5
-vitest: ^0.34.6
+Y las siguientes **dependencias de desarrollo**:
+
+*@testing-library/react: ^14.1.0
+*@types/react: ^18.2.15
+*@types/react-dom: ^18.2.7
+*@typescript-eslint/eslint-plugin: ^6.0.0
+*@typescript-eslint/parser: ^6.0.0
+*@vitejs/plugin-react-swc: ^3.3.2
+*eslint: ^8.45.0
+*eslint-plugin-react-hooks: ^4.6.0
+*eslint-plugin-react-refresh: ^0.4.3
+*happy-dom: ^12.10.3
+*typescript: ^5.0.2
+*vite: ^4.4.5
+*vitest: ^0.34.6
