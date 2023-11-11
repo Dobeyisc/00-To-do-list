@@ -1,8 +1,9 @@
-<h1>To do List </h1 style = 'align-items=center'>
+<h1>To do List </h1>
 Este proyecto es una lista de tareas (To-Do List) desarrollada en React utilizando varias bibliotecas y herramientas. A continuación, se detallan los requisitos previos y las instrucciones para instalar y ejecutar la aplicación.
 
 
-Requisitos previos 
+<h2>Requisitos previos </h2>
+
 Antes de comenzar a utilizar este proyecto, asegúrate de tener instalado lo siguiente:
 
 Node.js: Asegúrate de tener Node.js instalado en tu sistema.
