@@ -63,17 +63,18 @@ El proyecto utiliza las siguientes  **dependencias principales**:
 </ul>
 
 Y las siguientes **dependencias de desarrollo**:
-
-@testing-library/react: ^14.1.0
-@types/react: ^18.2.15
-@types/react-dom: ^18.2.7
-@typescript-eslint/eslint-plugin: ^6.0.0
-@typescript-eslint/parser: ^6.0.0
-@vitejs/plugin-react-swc: ^3.3.2
-eslint: ^8.45.0
-eslint-plugin-react-hooks: ^4.6.0
-eslint-plugin-react-refresh: ^0.4.3
-happy-dom: ^12.10.3
-typescript: ^5.0.2
-vite: ^4.4.5
-vitest: ^0.34.6
+<ul>
+<li> @testing-library/react: ^14.1.0 </li>
+<li> @types/react: ^18.2.15 </li>
+<li> @types/react-dom: ^18.2.7 </li>
+<li> @typescript-eslint/eslint-plugin: ^6.0.0 </li>
+<li> @typescript-eslint/parser: ^6.0.0 </li>
+<li> @vitejs/plugin-react-swc: ^3.3.2 </li>
+<li> eslint: ^8.45.0 </li>
+<li> eslint-plugin-react-hooks: ^4.6.0 </li>
+<li> eslint-plugin-react-refresh: ^0.4.3 </li>
+<li> happy-dom: ^12.10.3 </li>
+<li> typescript: ^5.0.2 </li>
+<li> vite: ^4.4.5 </li>
+<li> vitest: ^0.34.6 </li>
+</ul>
