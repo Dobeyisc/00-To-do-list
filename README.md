@@ -24,7 +24,7 @@ bash
 Copy code 👇
 npm install
 
-<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/394575/yarn.svg" alt="npm" height="50" /></a>:
+<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/374205/yarn.svg" alt="npm" height="50" /></a>:
 
 bash
 Copy code 👇
@@ -40,7 +40,7 @@ bash
 Copy code 👇
 npm run dev
 
-<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/394575/yarn.svg" alt="npm" height="50" /></a>:
+<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/374205/yarn.svg" alt="npm" height="50" /></a>:
 
 bash
 Copy code 👇
