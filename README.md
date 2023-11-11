@@ -6,7 +6,7 @@ Este proyecto es una lista de tareas (To-Do List) desarrollada en React utilizan
 
 Antes de comenzar a utilizar este proyecto, asegúrate de tener instalado lo siguiente:
 
-Node.js <a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" /></a> : Asegúrate de tener Node.js instalado en tu sistema.
+<a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" /></a> : Asegúrate de tener Node.js instalado en tu sistema.
 Instrucciones de Instalación
 Siga estos pasos para configurar y ejecutar la aplicación en su entorno local:
 
@@ -18,28 +18,33 @@ git clone https://github.com/tu-usuario/00-to-do-list.git
 cd 00-to-do-list
 Instala las dependencias del proyecto utilizando npm o yarn. Ejecute uno de los siguientes comandos según su gestor de paquetes preferido:
 
-Con npm:
+<a href="[https://nodejs.org/](https://www.npmjs.com)" target="_blank"><img style="margin: 10px" src="(https://www.svgrepo.com/show/452077/npm.svg)" alt="npm" height="50" /></a>:
 
 bash
-Copy code
+Copy code 👇
 npm install
 
-Con yarn:
+con yarn:
 
 bash
-Copy code
-yarn
+Copy code 👇
+yarn install
+
 
 Una vez que se hayan instalado las dependencias, puedes iniciar la aplicación localmente con el siguiente comando:
 
-bash
+Con npm:
 
+bash
+Copy code 👇
 npm run dev
-o
+
+con yarn:
 
 bash
-Copy code
+Copy code 👇
 yarn dev
+
 Esto iniciará la aplicación en su navegador web.
 
 Abre tu navegador web y visita (http://localhost:5173) <---(puerto por defecto) para interactuar con la aplicación de la lista de tareas.
