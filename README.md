@@ -18,7 +18,7 @@ git clone https://github.com/tu-usuario/00-to-do-list.git
 cd 00-to-do-list
 Instala las dependencias del proyecto utilizando npm o yarn. Ejecute uno de los siguientes comandos según su gestor de paquetes preferido:
 
-<a href="(https://www.npmjs.com/" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/452077/npm.svg" alt="npm" height="50" /></a>:
+<a href="(https://www.npmjs.com/" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/452077/npm.svg" alt="npm" height="50" /></a>
 
 bash
 Copy code 👇
@@ -33,7 +33,8 @@ yarn install
 
 Una vez que se hayan instalado las dependencias, puedes iniciar la aplicación localmente con el siguiente comando:
 
-Con npm:
+<a href="(https://www.npmjs.com/" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/452077/npm.svg" alt="npm" height="50" /></a>:
+
 
 bash
 Copy code 👇
