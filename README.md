@@ -1,4 +1,4 @@
-<h1>To do List </h1>
+<h1>To do List </h1 style = 'align-items=center'>
 Este proyecto es una lista de tareas (To-Do List) desarrollada en React utilizando varias bibliotecas y herramientas. A continuación, se detallan los requisitos previos y las instrucciones para instalar y ejecutar la aplicación.
 
 
