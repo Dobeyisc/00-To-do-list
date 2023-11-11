@@ -53,13 +53,14 @@ Abre tu navegador web y visita (http://localhost:5173) <---(puerto por defecto) 
 <h2>Dependencias</h2>
 
 El proyecto utiliza las siguientes  **dependencias principales**:
-
-@chakra-ui/react: ^2.8.2
-@emotion/react: ^11.11.1
-@emotion/styled: ^11.11.0
-framer-motion: ^10.16.4
-react: ^18.2.0
-react-dom: ^18.2.0
+<ul>
+<li> @chakra-ui/react: ^2.8.2 </li>
+<li> @emotion/react: ^11.11.1 </li>
+<li> @emotion/styled: ^11.11.0 </li>
+<li> framer-motion: ^10.16.4 </li>
+<li> react: ^18.2.0 </li>
+<li> react-dom: ^18.2.0 </li>
+</ul>
 
 Y las siguientes **dependencias de desarrollo**:
 
