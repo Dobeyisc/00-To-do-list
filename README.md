@@ -16,7 +16,7 @@ bash
 Copy code
 git clone https://github.com/tu-usuario/00-to-do-list.git
 cd 00-to-do-list
-Instala las dependencias del proyecto utilizando npm o yarn. Ejecute uno de los siguientes comandos según su gestor de paquetes preferido:
+Instala las dependencias del proyecto utilizando npm o yarn. <strong>Ejecute uno de los siguientes comandos según su gestor de paquetes preferido:</strong>
 
 <a href="(https://www.npmjs.com/" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/452077/npm.svg" alt="npm" height="50" /></a>
 
@@ -24,7 +24,7 @@ bash
 Copy code 👇
 npm install
 
-con yarn:
+<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/394575/yarn.svg" alt="npm" height="50" /></a>:
 
 bash
 Copy code 👇
@@ -40,7 +40,7 @@ bash
 Copy code 👇
 npm run dev
 
-con yarn:
+<a href="https://yarnpkg.com" target="_blank"><img style="margin: 10px" src="https://www.svgrepo.com/show/394575/yarn.svg" alt="npm" height="50" /></a>:
 
 bash
 Copy code 👇
