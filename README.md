@@ -6,7 +6,7 @@ Este proyecto es una lista de tareas (To-Do List) desarrollada en React utilizan
 
 Antes de comenzar a utilizar este proyecto, asegúrate de tener instalado lo siguiente:
 
-Node.js: Asegúrate de tener Node.js instalado en tu sistema.
+Node.js ![Node.js](https://www.svgrepo.com/show/303360/nodejs-logo.svg): Asegúrate de tener Node.js instalado en tu sistema.
 Instrucciones de Instalación
 Siga estos pasos para configurar y ejecutar la aplicación en su entorno local:
 
