@@ -54,27 +54,27 @@ Abre tu navegador web y visita (http://localhost:5173) <---(puerto por defecto) 
 
 El proyecto utiliza las siguientes  **dependencias principales**:
 <ul>
-<li> @chakra-ui/react: ^2.8.2 </li>
-<li> @emotion/react: ^11.11.1 </li>
-<li> @emotion/styled: ^11.11.0 </li>
-<li> framer-motion: ^10.16.4 </li>
-<li> react: ^18.2.0 </li>
-<li> react-dom: ^18.2.0 </li>
+<li> @chakra-ui/react: 2.8.2 </li>
+<li> @emotion/react: 11.11.1 </li>
+<li> @emotion/styled: 11.11.0 </li>
+<li> framer-motion: 10.16.4 </li>
+<li> react: 18.2.0 </li>
+<li> react-dom: 18.2.0 </li>
 </ul>
 
 Y las siguientes **dependencias de desarrollo**:
 <ul>
-<li> @testing-library/react: ^14.1.0 </li>
-<li> @types/react: ^18.2.15 </li>
-<li> @types/react-dom: ^18.2.7 </li>
-<li> @typescript-eslint/eslint-plugin: ^6.0.0 </li>
-<li> @typescript-eslint/parser: ^6.0.0 </li>
-<li> @vitejs/plugin-react-swc: ^3.3.2 </li>
-<li> eslint: ^8.45.0 </li>
-<li> eslint-plugin-react-hooks: ^4.6.0 </li>
-<li> eslint-plugin-react-refresh: ^0.4.3 </li>
-<li> happy-dom: ^12.10.3 </li>
-<li> typescript: ^5.0.2 </li>
-<li> vite: ^4.4.5 </li>
-<li> vitest: ^0.34.6 </li>
+<li> @testing-library/react: 14.1.0 </li>
+<li> @types/react: 18.2.15 </li>
+<li> @types/react-dom: 18.2.7 </li>
+<li> @typescript-eslint/eslint-plugin: 6.0.0 </li>
+<li> @typescript-eslint/parser: 6.0.0 </li>
+<li> @vitejs/plugin-react-swc: 3.3.2 </li>
+<li> eslint: 8.45.0 </li>
+<li> eslint-plugin-react-hooks: 4.6.0 </li>
+<li> eslint-plugin-react-refresh: 0.4.3 </li>
+<li> happy-dom: 12.10.3 </li>
+<li> typescript: 5.0.2 </li>
+<li> vite: 4.4.5 </li>
+<li> vitest: 0.34.6 </li>
 </ul>
