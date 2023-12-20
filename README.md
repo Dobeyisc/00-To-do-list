@@ -50,7 +50,7 @@ yarn dev
 Abre tu navegador web y visita (http://localhost:5173) <---(puerto por defecto) para interactuar con la aplicación de la lista de tareas.
 Esto iniciará la aplicación en su navegador web.
 
-##TECNOLOGIAS
+## TECNOLOGIAS
 
 [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)]() [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]() [![React](https://custom-icon-badges.demolab.com/badge/-React-218AAB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/) 
 
