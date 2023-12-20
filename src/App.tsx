@@ -1,4 +1,3 @@
-//import { Item } from './components/Item';
 import { ItemId } from './types/interface';
 import { useItems } from './Hooks/useItem';
 import { useSEO } from './Hooks/useCEO';
@@ -55,7 +54,7 @@ function App() {
           Lista de elementos
         </Text>
         {items.length === 0 ? (
-          <Text>No hay elementos.</Text>
+          <Text>No hay elementos</Text>
         ) : (
           <VStack align="stretch">
             {items.map((item) => (

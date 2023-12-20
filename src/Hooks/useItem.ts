@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { type Item } from "../App"
+import { Item } from "../App.tsx"
 import structureItem from "../types/interface.ts"
 
 export const useItems = () => {
