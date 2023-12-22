@@ -1,11 +1,15 @@
-import { ItemId } from './types/interface';
+import { type ItemId } from './types/interface';
 import { useItems } from './Hooks/useItem';
 import { useSEO } from './Hooks/useCEO';
 import { Box, Button, Input, Text, VStack } from '@chakra-ui/react';
 import './App.css';
+import { useState } from 'react';
+
 
 function App() {
-  const { items, addItem, removeItem } = useItems();
+  const { items, addItem, removeItem, editItem } = useItems();
+  const [editingItemId, setEditingItemId] = useState<ItemId | null>(null);
+  const [editText, setEditText] = useState<string>('');
 
   useSEO({
     title: `(${items.length}) Lista de tareas`,
@@ -19,21 +23,37 @@ function App() {
 
     const input = elements.namedItem('item');
     const isInput = input instanceof HTMLInputElement;
-    if (!isInput || input == null) return;
+    if (!isInput || input?.value == null) return;
 
     addItem(input.value);
 
     input.value = '';
   };
 
-  const createHandleRemoveItem = (id: ItemId) => () => {
-    removeItem(id);
+
+  const handleEditClick = (id: ItemId, text: string) => {
+    setEditingItemId(id);
+    setEditText(text);
+  };
+
+  const handleEditSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (editingItemId !== null && editText.length >= 1) {
+      editItem(editingItemId, editText);
+      setEditingItemId(null);
+      setEditText('');
+  
+      const input = event.currentTarget.elements.namedItem('item') as HTMLInputElement;
+      if (input) {
+        input.value = '';
+      }
+    }
   };
 
   return (
     <VStack spacing={4} align="center">
       <Box p={4} borderWidth="1px" borderRadius="lg" boxShadow="md">
-        <Text fontSize="2xl">Lista de tareas</Text>
+        <Text fontSize="3xl">Lista de tareas</Text>
         <Text>Añadir</Text>
 
         <form onSubmit={handleSubmit} aria-label="Añadir elementos a la lista">
@@ -50,7 +70,7 @@ function App() {
       </Box>
 
       <Box w="100%">
-        <Text fontSize="xl" mt={4}>
+        <Text fontSize="xl" mt={2}>
           Lista de elementos
         </Text>
         {items.length === 0 ? (
@@ -68,14 +88,39 @@ function App() {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Text>{item.text}</Text>
-                <Button
-                  colorScheme="red"
-                  size="xs"
-                  onClick={createHandleRemoveItem(item.id)}
-                >
-                  Eliminar
-                </Button>
+                {editingItemId === item.id ? (
+                  <form onSubmit={handleEditSubmit}>
+                    <Input
+                      value={editText}
+                      onChange={(e) => setEditText(e.target.value)}
+                    />
+                    <Button
+                      colorScheme="blue"
+                      size="xs"
+                      type="submit"
+                    >
+                      Guardar
+                    </Button>
+                  </form>
+                ) : (
+                  <>
+                    <Text>{item.text}</Text>
+                    <Button
+                      colorScheme="blue"
+                      size="xs"
+                      onClick={() => handleEditClick(item.id, item.text)}
+                    >
+                      Editar
+                    </Button>
+                    <Button
+                      colorScheme="red"
+                      size="xs"
+                      onClick={() => removeItem(item.id)}
+                    >
+                      Eliminar
+                    </Button>
+                  </>
+                )}
               </Box>
             ))}
           </VStack>
@@ -84,5 +129,4 @@ function App() {
     </VStack>
   );
 }
-
 export default App;
