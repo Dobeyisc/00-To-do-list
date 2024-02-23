@@ -1,5 +1,9 @@
-// Item.tsx
-import { Box, Button, Input, Text, VStack } from '@chakra-ui/react';
+import { Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,Box, Grid, GridItem, Textarea, Button, Input, Text, VStack, 
+  Flex} from '@chakra-ui/react';
 import { useState } from 'react';
 import { ItemId } from '../types/interface';
 import { useItems } from '../Hooks/useItem';
@@ -11,6 +15,7 @@ const Item = () => {
   const [editingItemId, setEditingItemId] = useState<ItemId | null>(null);
   const [editText, setEditText] = useState<string>('');
   const [newItemText, setNewItemText] = useState<string>('');
+  const [newItemDescription, setNewItemDescription] = useState<string>('');
 
   useSEO({ title: `(${items.length}) Lista de tareas`, description: 'Añadir, editar, eliminar elementos' });
 
@@ -33,7 +38,6 @@ const Item = () => {
     if (newItemText.length >= 1) {
       addItem(newItemText);
       setNewItemText('');
-
       const input = event.currentTarget.elements.namedItem('newItem') as HTMLInputElement;
       if (input) {
         input.value = '';
@@ -41,44 +45,67 @@ const Item = () => {
     }
   };
 
-  return (
-    <VStack spacing={4} align="center">
-      <Box p={4} borderWidth="1px" borderRadius="lg" boxShadow="md">
-        <Text fontSize="3xl">Lista de tareas</Text>
-        <Text>Añadir</Text>
-        <form onSubmit={handleAddItem} aria-label="Añadir elementos a la lista">
-          <Input
-            name="newItem"
-            required
-            type="text"
-            placeholder="Nueva tarea 👨‍💻"
-            onChange={(e) => setNewItemText(e.target.value)}
-          />
-          <Button colorScheme="teal" size="sm" type="submit">
-            Añadir
-          </Button>
-        </form>
-      </Box>
+  const handleAddItemDescription = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (newItemDescription.length >= 1) {
+      addItem(newItemDescription);
+      setNewItemDescription('');
+      const input = event.currentTarget.elements.namedItem('newDescription') as HTMLInputElement;
+      if (input) {
+        input.value = '';
+      }
+    }
+  };
 
-      <Box w="100%">
-        <Text fontSize="xl" mt={2}>
-          Lista de elementos
-        </Text>
-        {items.length === 0 ? (
-          <Text>No hay elementos</Text>
-        ) : (
-          <VStack align="stretch">
-            {items.map((item) => (
-              <Box
-                key={item.id}
-                p={2}
-                borderWidth="1px"
-                borderRadius="md"
-                boxShadow="md"
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-              >
+  return (
+    <Flex 
+    height="100vh"
+    align="center"
+    justify="center"
+    >
+    <Grid templateColumns='repeat(5, 1fr)' gap={2}>
+      <GridItem colSpan={2}>
+        <VStack spacing={2} align="center">
+          <Box p={4} borderWidth="2px" borderRadius="lg" boxShadow="md">
+            <Text as="b" fontSize="4xl">Lista de tareas</Text>
+            <Text p={4} fontSize="2xl">Añadir</Text>
+            <form onSubmit={handleAddItem} aria-label="Añadir elementos a la lista">
+              <Input
+                name="newItem"
+                required
+                type="text"
+                placeholder="Nueva tarea 👨‍💻"
+                onChange={(e) => setNewItemText(e.target.value)}
+              />
+            </form>
+            <Text p={4} fontSize="2xl">Descripcion</Text>
+            <form onSubmit={handleAddItemDescription}>
+              <Textarea
+                name="newItemDescription"
+                placeholder="Descripción de la tarea"
+                onChange={(e) => setNewItemDescription(e.target.value)}
+              />
+              <Button mt={4} colorScheme="teal" size="sm" type="submit">
+                Añadir
+              </Button>
+            </form>
+          </Box>
+        </VStack>
+      </GridItem>
+  
+      <GridItem colStart={4} colEnd={6}>
+        <Accordion>
+          {items.map((item) => (
+            <AccordionItem key={item.id}>
+              <h2>
+                <AccordionButton>
+                  <Box as="span" flex='1' textAlign='left'>
+                    {item.text}
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
                 {editingItemId === item.id ? (
                   <form onSubmit={handleEditSubmit}>
                     <Input
@@ -112,13 +139,13 @@ const Item = () => {
                     </Button>
                   </>
                 )}
-              </Box>
-            ))}
-          </VStack>
-        )}
-      </Box>
-    </VStack>
-  );
-}
-
+              </AccordionPanel>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </GridItem>
+    </Grid>
+    </Flex>
+  )};
+  
 export default Item;
